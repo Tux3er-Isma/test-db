@@ -8,7 +8,5 @@ import node from "@astrojs/node";
 export default defineConfig({
   integrations: [db()],
   output: "server",
-  adapter: node({
-    mode: "standalone"
-  })
+  adapter: netlify()
 });
